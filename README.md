@@ -48,3 +48,14 @@ Using **vanilla JavaScript** (imperative programming), you'd write:
   element.className = "quote";
   document.getElementById("root").appendChild(element);
 </script>
+
+Here, we give JavaScript specific, step-by-step instructions, which is called imperative programming.
+
+With React (declarative programming), you’d write:
+
+<script type="text/babel">
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<p className="quote">Carpe Diem</p>);
+</script>
+
+In this declarative style, we simply tell React what we want: "Show a paragraph with a quote inside the root element." React takes care of the how, making the code cleaner and easier to read.
